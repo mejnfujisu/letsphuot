@@ -73,7 +73,7 @@ const routes = [
   {
     name: "home",
     icon: <Icon>dashboard</Icon>,
-    route: "/pages/landing-pages/home",
+    route: "/",
     component: <Home />,
   },
   {
