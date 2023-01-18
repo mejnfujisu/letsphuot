@@ -1,20 +1,5 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// @mui material components
-// import Container from "@mui/material/Container";
+import React, { useState } from 'react'
+import './index.css';
 import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
@@ -35,17 +20,129 @@ import Personal from "pages/Home/sections/personal/Personal";
 import Location from "pages/Home/sections/location/Location";
 
 function Places() {
+  const [animateContent, setAnimateContent] = useState('')
+  const [activeHome, setActiveHome] = useState('')
+  const [activeAbout, setActiveAbout] = useState('')
+  const [activeContact, setActiveContact] = useState('')
+
+  function defaltAnimation(params) {
+    setAnimateContent('animate_content')
+
+    setTimeout(() => {
+      setAnimateContent('')
+    }, 3200);
+
+    setTimeout(() => {
+      if (params === 'home') {
+        setActiveHome('fadeIn')
+        setActiveAbout('')
+        setActiveContact('')
+      }
+      else if (params === 'about') {
+        setActiveAbout('fadeIn')
+        setActiveHome('')
+        setActiveContact('')
+      }
+      else if (params === 'contact') {
+        setActiveContact('fadeIn')
+        setActiveHome('')
+        setActiveAbout('')
+      }
+    }, 1500);
+  }
+
+
   return (
     <MKBox component="section">
-      <Grid container>
-        <Grid item xs={12} sm={6} lg={3}>
-          <Personal/>
-          <Location />
-        </Grid>
-        <Grid item xs={12} sm={6} lg={9}>
-            <Items />
-        </Grid>
-      </Grid>
+
+      <div className={`page__style homes ${animateContent} ${activeHome}`} >
+        <div className="page__description">
+          <div>
+            <h1>Home</h1>
+            <button
+              type="button"
+              className="btn_nav"
+              onClick={() => {
+                defaltAnimation('about')
+              }}
+            >
+              About
+            </button>
+
+            <Grid container>
+              <Grid item xs={12} sm={6} lg={3}>
+                <Personal />
+                <Location />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={9}>
+                <Items />
+              </Grid>
+            </Grid>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div className={`page__style about ${animateContent} ${activeAbout}`} >
+        <div className="page__description">
+          <div>
+            <h1>About</h1>
+            <button
+              type="button"
+              className="btn_nav"
+              onClick={() => {
+                defaltAnimation('contact')
+              }}
+            >
+              Contact
+            </button>
+
+            <Grid container>
+              <Grid item xs={12} sm={6} lg={3}>
+                <Personal />
+                <Location />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={9}>
+                <Items />
+              </Grid>
+            </Grid>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div className={`page__style contact ${animateContent} ${activeContact}`} >
+        <div className="page__description">
+          <div>
+            <h1>Contact</h1>
+            <button
+              type="button"
+              className="btn_nav"
+              onClick={() => {
+                defaltAnimation('home')
+              }}
+            >
+              Home
+            </button>
+
+            <Grid container>
+              <Grid item xs={12} sm={6} lg={3}>
+                <Personal />
+                <Location />
+              </Grid>
+              <Grid item xs={12} sm={6} lg={9}>
+                <Items />
+              </Grid>
+            </Grid>
+
+          </div>
+        </div>
+      </div>
+
     </MKBox>
   );
 }

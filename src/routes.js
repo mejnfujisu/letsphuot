@@ -37,7 +37,7 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
-import Icon from "@mui/material/Icon";
+// import Icon from "@mui/material/Icon";
 
 // @mui icons
 // import GitHubIcon from "@mui/icons-material/GitHub";
@@ -72,37 +72,31 @@ import Home from "layouts/pages/home";
 const routes = [
   {
     name: "home",
-    icon: <Icon>dashboard</Icon>,
     route: "/",
     component: <Home />,
   },
   {
     name: "tours",
-    icon: <Icon>dashboard</Icon>,
     route: "/pages/landing-pages/author",
     component: <Home />,
   },
   {
     name: "groups",
-    icon: <Icon>dashboard</Icon>,
     route: "/pages/landing-pages/contact-us",
     component: <Home />,
   },
   {
     name: "chat",
-    icon: <Icon>dashboard</Icon>,
     route: "/pages/landing-pages/contact-us",
     component: <Home />,
   },
   {
     name: "contact",
-    icon: <Icon>dashboard</Icon>,
     route: "/pages/landing-pages/about-us",
     component: <Home />,
   },
   {
     name: "setting",
-    icon: <Icon>view_day</Icon>,
     // collapse: [
     //   {
     //     name: "page sections",
