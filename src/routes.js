@@ -47,7 +47,7 @@ Coded by www.creative-tim.com
 // import ContactUs from "layouts/pages/landing-pages/contact-us";
 // import Author from "layouts/pages/landing-pages/author";
 // import SignIn from "layouts/pages/authentication/sign-in";
-import Home from "layouts/pages/home";
+import Layout from "layouts";
 
 // Sections
 // import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -72,28 +72,28 @@ import Home from "layouts/pages/home";
 const routes = [
   {
     name: "home",
-    route: "/",
-    component: <Home />,
+    route: "/home",
+    component: <Layout />,
   },
   {
     name: "tours",
-    route: "/pages/landing-pages/author",
-    component: <Home />,
+    route: "/tours",
+    component: <Layout />,
   },
   {
     name: "groups",
-    route: "/pages/landing-pages/contact-us",
-    component: <Home />,
+    route: "/groups",
+    component: <Layout />,
   },
   {
     name: "chat",
-    route: "/pages/landing-pages/contact-us",
-    component: <Home />,
+    route: "/chat",
+    component: <Layout />,
   },
   {
     name: "contact",
     route: "/pages/landing-pages/about-us",
-    component: <Home />,
+    component: <Layout />,
   },
   {
     name: "setting",
