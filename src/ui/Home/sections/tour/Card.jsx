@@ -25,13 +25,22 @@ function Card({ imagen }) {
     >
       <div>
         <img src={imagen} alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-        </p>
+        <div
+          style={{
+            position: "absolute",
+            top: "0",
+            right: "0",
+            marginTop: "10px"
+          }}
+        >
+          <Button text="by Han" style={{ background: "white" }} />
+        </div>
+        <h2>Đà Lạt Phượt</h2>
+        <p>HCM - Đà Lạt</p>
         <div className={Styles.btnn}>
-          <Button text="Demo" />
-          <Button text="Code" />
+          {/* <Button text="Demo" /> */}
+          <p style={{ fontSize: "small" }}>Kh: Sep 15</p>
+          <Button text="Detail" />
         </div>
       </div>
     </animated.div>
@@ -40,11 +49,11 @@ function Card({ imagen }) {
 }
 
 Card.defaultProps = {
-    imagen: ""
+  imagen: ""
 };
 
 Card.propTypes = {
-    imagen: PropTypes.string
+  imagen: PropTypes.string
 };
 
 export default Card;
