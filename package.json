@@ -1,10 +1,8 @@
 {
-  "name": "material-kit-2-react",
+  "name": "Let's Phượt",
   "version": "2.0.0",
   "private": true,
-  "author": "Creative Tim",
-  "license": "See license in https://www.creative-tim.com/license",
-  "description": "React version of Material Kit 2 by Creative Tim",
+  "author": "Hei",
   "homepage": "https://main--classy-kataifi-7052e4.netlify.app/",
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
