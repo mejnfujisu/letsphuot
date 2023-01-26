@@ -58,11 +58,9 @@
   text-decoration: underline;
 }
 .animate_content {
-  animation: animate 3s ease;
+  animation: animate 2s ease;
 }
-.fadeIn {
-  z-index: 10;
-}
+
 /*  home
 -----------------------------------*/
 .home {
@@ -70,7 +68,7 @@
   z-index: 0;
 }
 
-.hide_pages {
+.hide_ui {
   display: none;
 }
 /*  Projects

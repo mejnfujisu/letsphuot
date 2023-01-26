@@ -1,0 +1,98 @@
+
+
+  .ReactTags .app {
+    padding: 40px;
+    text-align: center;
+    /* Example Styles for React Tags*/
+  }
+  .ReactTags .container {
+    margin: auto;
+    width: 50%;
+  }
+  .ReactTags .ReactTags__tags {
+    position: relative;
+  }
+  .ReactTags .ReactTags__clearAll {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    background: #f88d8d;
+    color: #fff;
+    border: none;
+    /* Styles for the input */
+  }
+  .ReactTags .ReactTags__tagInput {
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .ReactTags .ReactTags__tagInput input.ReactTags__tagInputField, .ReactTags .ReactTags__tagInput input.ReactTags__tagInputField:focus {
+    display: none;
+    /* height: 31px;
+    margin: 0;
+    font-size: 12px;
+    border: 1px solid #eee;
+    min-width: 150px; */
+  }
+  .ReactTags .ReactTags__editInput {
+    border-radius: 1px;
+  }
+  .ReactTags .ReactTags__editTagInput {
+    display: inline-flex;
+    /* Styles for selected tags */
+  }
+
+  .ReactTags .ReactTags__selected span.ReactTags__tag {
+    background-color: #4AC0BD;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    padding: 11px 1rem;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    /* margin: 0 0.5rem; */
+    width: 7.5rem;
+  }
+  .ReactTags .ReactTags__selected span.ReactTags__tag:first-child {
+    margin-left: 0px;
+  }
+  .ReactTags .ReactTags__selected a.ReactTags__remove {
+    color: #aaa;
+    margin-left: 5px;
+    cursor: pointer;
+    /* Styles for suggestions */
+  }
+  .ReactTags .ReactTags__suggestions {
+    position: absolute;
+    top: 60px;
+  }
+  .ReactTags .ReactTags__suggestions ul {
+    list-style-type: none;
+    box-shadow: 0.05em 0.01em 0.5em rgba(0, 0, 0, 0.2);
+    background: white;
+    width: 200px;
+  }
+  .ReactTags .ReactTags__suggestions li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 0;
+  }
+  .ReactTags .ReactTags__suggestions li mark {
+    text-decoration: underline;
+    background: none;
+    font-weight: 600;
+  }
+  .ReactTags .ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+    background: #b7cfe0;
+    cursor: pointer;
+  }
+  .ReactTags .ReactTags__remove {
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+    padding-left: 8px;
+  }
+  

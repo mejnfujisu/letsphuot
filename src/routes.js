@@ -46,7 +46,7 @@ Coded by www.creative-tim.com
 // import AboutUs from "layouts/pages/landing-pages/about-us";
 // import ContactUs from "layouts/pages/landing-pages/contact-us";
 // import Author from "layouts/pages/landing-pages/author";
-// import SignIn from "layouts/pages/authentication/sign-in";
+import TourDetail from "layouts/tourDetail";
 import Layout from "layouts";
 
 // Sections
@@ -93,7 +93,7 @@ const routes = [
   {
     name: "contact",
     route: "/pages/landing-pages/about-us",
-    component: <Layout />,
+    component: <TourDetail />,
   },
   {
     name: "setting",

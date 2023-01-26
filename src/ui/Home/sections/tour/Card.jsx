@@ -4,8 +4,10 @@ import { useSpring, animated } from "react-spring"
 import Button from "ui/Home/sections/tour/Button";
 
 import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 
 function Card({ imagen }) {
+  const navigate = useNavigate();
   const [show, setShown] = useState(false);
 
   const props3 = useSpring({
@@ -15,6 +17,12 @@ function Card({ imagen }) {
       ? "0 20px 25px rgb(0 0 0 / 25%)"
       : "0 2px 10px rgb(0 0 0 / 8%)"
   });
+
+  function goToDetailPage() {
+    console.log('HERE')
+    const path = `/pages/landing-pages/about-us`; 
+    navigate(path);
+  }
   return (
 
     <animated.div
@@ -33,14 +41,14 @@ function Card({ imagen }) {
             marginTop: "10px"
           }}
         >
-          <Button text="by Han" style={{ background: "white" }} />
+          <Button style={{ background: "#ffffff" }} text="by Han" />
         </div>
         <h2>Đà Lạt Phượt</h2>
         <p>HCM - Đà Lạt</p>
         <div className={Styles.btnn}>
           {/* <Button text="Demo" /> */}
           <p style={{ fontSize: "small" }}>Kh: Sep 15</p>
-          <Button text="Detail" />
+          <Button text="Detail" onClick={goToDetailPage} />
         </div>
       </div>
     </animated.div>

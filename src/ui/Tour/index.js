@@ -28,6 +28,8 @@ import MKTypography from "components/MKTypography";
 // Presentation page components
 import ExampleCard from "ui/Tour/components/ExampleCard";
 
+import Filter from "ui/Tour/sections/filter";
+
 // Data
 import data from "ui/Tour/data";
 
@@ -63,6 +65,7 @@ function Tour() {
           <MKTypography variant="h2" fontWeight="bold" style={{color: "white"}}>
           Tour title anf filter tool
           </MKTypography>
+          <Filter />
         </Grid>
       </Container>
       <Container sx={{ mt: 6 }}>{renderData}</Container>
