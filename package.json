@@ -7,6 +7,8 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
   },
+  "force": true,
+  "legacy-peer-deps":true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/creativetimofficial/ct-material-kit-react.git"
@@ -40,7 +42,7 @@
     "react-syntax-highlighter": "15.4.5",
     "react-tag-input": "^6.8.1",
     "uuid": "^9.0.0",
-    "vertical-timeline-component-for-react": "1.0.6",
+    "vertical-timeline-component-for-react": "1.0.7",
     "web-vitals": "1.0.1"
   },
   "scripts": {
