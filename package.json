@@ -7,8 +7,6 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
   },
-  "force": true,
-  "legacy-peer-deps":true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/creativetimofficial/ct-material-kit-react.git"
@@ -47,7 +45,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm install -f && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install -f && npm start"
